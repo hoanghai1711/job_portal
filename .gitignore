@@ -1,0 +1,15 @@
+# React
+job_react/node_modules/
+job_react/build/
+job_react/dist/
+*.log
+
+# Laravel
+job_api/vendor/
+job_api/storage/*.key
+job_api/storage/logs/
+job_api/bootstrap/cache/
+job_api/public/storage
+job_api/.env
+job_api/.env.*
+job_api/.phpunit.result.cache
