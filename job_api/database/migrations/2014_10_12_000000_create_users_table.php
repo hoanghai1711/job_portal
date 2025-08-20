@@ -19,6 +19,10 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+
+            // 1 = nhà tuyển dụng (recruiter), 2 = ứng viên (candidate)
+            $table->unsignedTinyInteger('user_type')->default(2);
+
             $table->rememberToken();
             $table->timestamps();
         });
